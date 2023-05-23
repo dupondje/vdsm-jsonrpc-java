@@ -110,6 +110,10 @@ export JAVA_HOME="%{_java_jdk_home}"
 %files javadoc -f .mfiles-javadoc
 
 %changelog
+* Tue May 23 2023 Jean-Louis Dupond <jean-louis@dupond.be> 1.7.2.1
+- Replace secret data with asterisks in debug logs
+- Disconnect the session after SSL handshake issue
+
 * Mon Jul 25 2022 Artur Socha <asocha@redhat.com> 1.7.2
 - Fix expired SSL certificates validation on connect
 - Fix bogus date in changelog
